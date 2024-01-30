@@ -71,7 +71,17 @@ calcule el precio final con IVA. El IVA será una constante que sera del 21%
 8. Haz el mismo ejercicio anterior con un bucle for.
 */
 
-for (let num = 1; num <= 100; num ++) {
-    console.log(num);
-}
+// for (let num = 1; num <= 100; num ++) {
+//     console.log(num);
+// }
 
+/*
+9. Muestra los números del 1 al 100 (ambos incluidos) divisibles entre 2 y 3. Utiliza el bucle
+que desees.
+*/
+
+for (let num = 1; num <= 100; num++) {
+    if (num % 2 == 0 && num % 3 == 0) {
+        console.log(num);
+    }
+}
