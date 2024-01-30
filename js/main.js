@@ -110,21 +110,68 @@ mostrará la suma de todas las ventas. Piensa que es lo que se repite y lo que n
 o no. Usa un switch para ello.
 */
 
-let day = prompt("What day is today?").toLowerCase().trim()
+// let day = prompt("What day is today?").toLowerCase().trim()
 
-switch (day) {
-    case "monday": 
-    case "tuesday":
-    case "wednesday":
-    case "thursday":
-    case "sunday":
-        console.log("It's not weekend!! Get to work");
-    break;
+// switch (day) {
+//     case "monday": 
+//     case "tuesday":
+//     case "wednesday":
+//     case "thursday":
+//     case "sunday":
+//         console.log("It's not weekend!! Get to work");
+//     break;
 
-    case "saturday": 
-    case "sunday":
-        console.log("It's weekend!! yay");
-    break;
+//     case "saturday": 
+//     case "sunday":
+//         console.log("It's weekend!! yay");
+//     break;
 
-    default: console.log("Not a day of the week");
+//     default: console.log("Not a day of the week");
+// }
+
+/*
+12. Escribe una aplicación con un String que contenga una contraseña cualquiera. Después
+se te pedirá que introduzcas la contraseña, con 3 intentos. Cuando aciertes ya no pedirá
+más la contraseña y mostrará un mensaje diciendo “Enhorabuena”. Piensa bien en la
+condición de salida (3 intentos y si acierta sale, aunque le queden intentos).
+*/
+
+// const password = "ABC";
+
+// let yourTry = prompt("Write the password")
+// let times = 1;
+
+// switch (yourTry) {
+//     case yourTry === password:
+//         console.log("Password is correct")
+//         break;
+//     case yourTry !== password:
+//         console.log("Password is not correct")
+//         prompt("Write the password")
+//         break;
+//     default:
+//         console.log("Password is not correct, you've run out of chances")
+// }
+
+
+
+
+const password = "ABC";
+
+for (let i = 0; i < 3; i++) {
+    let yourTry = prompt("Write the password")
+    if (yourTry == password) {
+        i=3;
+        console.log("Password is correct")
+    } else {
+        console.log("Password is not correct, try again")
+    }
 }
+
+
+
+
+//  else {
+//     console.log("Password is not correct, you've run out of chances")
+// }
+
