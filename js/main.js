@@ -92,22 +92,39 @@ pedirá tantas ventas por teclado como número de ventas se hayan indicado. Al f
 mostrará la suma de todas las ventas. Piensa que es lo que se repite y lo que no.
 */
 
-let ventas = prompt("Cuantas compras has hecho? (escribe el número)")
+// let ventas = prompt("Cuantas compras has hecho? (escribe el número)")
 
 
-let total = 0;
-let veces = 0;
-do {
-    veces ++
-    let precio = parseInt(prompt("Cuánto has pagado?"));
-    total += precio;
-} while (veces < ventas)
+// let total = 0;
+// let veces = 0;
+// do {
+//     veces ++
+//     let precio = parseInt(prompt("Cuánto has pagado?"));
+//     total += precio;
+// } while (veces < ventas)
 
-console.log("Has hecho ", ventas, "ventas y has pagado un total de", total+"€");
+// console.log("Has hecho ", ventas, "ventas y has pagado un total de", total+"€");
 
-// for (let i = 0; i++; i < ventas) {
-    
-//     console.log(resultado)
-// }
+/*
+11. Crea una aplicación que nos pida un día de la semana y que nos diga si es un día laboral
+o no. Usa un switch para ello.
+*/
 
+let day = prompt("What day is today?").toLowerCase().trim()
 
+switch (day) {
+    case "monday": 
+    case "tuesday":
+    case "wednesday":
+    case "thursday":
+    case "sunday":
+        console.log("It's not weekend!! Get to work");
+    break;
+
+    case "saturday": 
+    case "sunday":
+        console.log("It's weekend!! yay");
+    break;
+
+    default: console.log("Not a day of the week");
+}
