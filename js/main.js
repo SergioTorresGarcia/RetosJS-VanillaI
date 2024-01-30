@@ -18,5 +18,12 @@ funciona.
 por consola. Por ejemplo: si introduzco “Fernando”, me aparezca “Bienvenido Fernando”.
 */
 
-var nombre = "Sergio";
+// var nombre = "Sergio";
+// console.log("Bienvenido", nombre)
+
+/*
+3. Modifica la aplicación anterior, para que nos pida el nombre que queremos introducir
+(recuerda usar prompt).
+*/
+var nombre = prompt("Cómo te llamas?");
 console.log("Bienvenido", nombre)
