@@ -25,5 +25,16 @@ por consola. Por ejemplo: si introduzco “Fernando”, me aparezca “Bienvenid
 3. Modifica la aplicación anterior, para que nos pida el nombre que queremos introducir
 (recuerda usar prompt).
 */
-var nombre = prompt("Cómo te llamas?");
-console.log("Bienvenido", nombre)
+// var nombre = prompt("Cómo te llamas?");
+// console.log("Bienvenido", nombre)
+
+/*
+4. Haz una aplicación que calcule el área de un círculo (pi*R2). El radio se pedirá por teclado
+(recuerda pasar de String a double con parseDouble). Usa la constante PI.
+*/
+
+const pi = 3.1416;
+var radio = parseFloat(prompt("Dime el radio del círculo"))
+
+var area = pi * (radio ** 2)
+console.log("El área de un círculo de radio", radio, "es: ", area)
