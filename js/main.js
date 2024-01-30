@@ -61,9 +61,17 @@ calcule el precio final con IVA. El IVA será una constante que sera del 21%
 7. Muestra los números del 1 al 100 (ambos incluidos). Usa un bucle while.
 */
 
-let num = 0;
-do {
-    num ++
+// let num = 0;
+// do {
+//     num ++
+//     console.log(num);
+// } while (num < 100)
+
+/*
+8. Haz el mismo ejercicio anterior con un bucle for.
+*/
+
+for (let num = 1; num <= 100; num ++) {
     console.log(num);
-} while (num < 100)
+}
 
