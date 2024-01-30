@@ -52,8 +52,18 @@ debemos indicarlo.
 calcule el precio final con IVA. El IVA será una constante que sera del 21%
 */
 
-const iva = 1.21
-let price = parseFloat(prompt("Escribe un precio neto"));
-let result = price * iva
-console.log("El precio con un IVA del 21% añadido es: ", result)
+// const iva = 1.21
+// let price = parseFloat(prompt("Escribe un precio neto"));
+// let result = price * iva
+// console.log("El precio con un IVA del 21% añadido es: ", result)
+
+/*
+7. Muestra los números del 1 al 100 (ambos incluidos). Usa un bucle while.
+*/
+
+let num = 0;
+do {
+    num ++
+    console.log(num);
+} while (num < 100)
 
