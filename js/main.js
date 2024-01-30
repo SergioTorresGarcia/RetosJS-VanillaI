@@ -44,5 +44,16 @@ por consola. Por ejemplo: si introduzco “Fernando”, me aparezca “Bienvenid
 debemos indicarlo.
 */
 
-let num = parseInt(prompt("Escribe un número"))
-num % 2 == 0 ? console.log("Es divisible entre 2") : console.log("No es divisible entre 2")
+// let num = parseInt(prompt("Escribe un número"))
+// num % 2 == 0 ? console.log("Es divisible entre 2") : console.log("No es divisible entre 2")
+
+/*
+6. Lee un número por teclado que pida el precio de un producto (puede tener decimales) y
+calcule el precio final con IVA. El IVA será una constante que sera del 21%
+*/
+
+const iva = 1.21
+let price = parseFloat(prompt("Escribe un precio neto"));
+let result = price * iva
+console.log("El precio con un IVA del 21% añadido es: ", result)
+
