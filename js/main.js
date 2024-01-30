@@ -138,40 +138,52 @@ condición de salida (3 intentos y si acierta sale, aunque le queden intentos).
 
 // const password = "ABC";
 
-// let yourTry = prompt("Write the password")
-// let times = 1;
-
-// switch (yourTry) {
-//     case yourTry === password:
+// for (let i = 0; i < 3; i++) {
+//     let yourTry = prompt("Write the password")
+//     if (yourTry == password) {
+//         i=3;
 //         console.log("Password is correct")
-//         break;
-//     case yourTry !== password:
+//     } else {
 //         console.log("Password is not correct")
-//         prompt("Write the password")
-//         break;
-//     default:
-//         console.log("Password is not correct, you've run out of chances")
+//     }
 // }
 
+/*
+13. Crea una aplicación llamada CalculadoraInversa, nos pedirá 2 operandos (int) y un signo
+aritmético (String), según este último se realizará la operación correspondiente. Al final
+mostrará el resultado en un cuadro de diálogo.
+Los signos aritméticos disponibles son:
++: suma los dos operandos.
+-: resta los operandos.
+*: multiplica los operandos.
+/: divide los operandos, este debe dar un resultado con decimales (double)
+^: 1o operando como base y 2o como exponente.
+%: módulo, resto de la división entre operando1 y operando2.
+*/
 
+let num1 = parseInt(prompt("Dime un número"))
+let num2 = parseInt(prompt("Dime otro número"))
+let op = prompt("Escoge uno de estos 6 signos aritméticos: +, -, *, /, ^, %")
 
-
-const password = "ABC";
-
-for (let i = 0; i < 3; i++) {
-    let yourTry = prompt("Write the password")
-    if (yourTry == password) {
-        i=3;
-        console.log("Password is correct")
-    } else {
-        console.log("Password is not correct, try again")
-    }
+switch (op) {
+    case "+":
+        console.log(num1 + num2);
+        break;
+    case "-":
+        console.log(num1 - num2);
+        break;
+    case "*":
+        console.log(num1 * num2);
+        break;
+    case "/":
+        console.log(num1 / num2);
+        break;
+    case "^":
+        console.log(num1 ** num2);
+        break;
+    case "%":
+        console.log(num1 % num2);
+        break;
+    default:
+        console.log("Datos incorrectos")
 }
-
-
-
-
-//  else {
-//     console.log("Password is not correct, you've run out of chances")
-// }
-
