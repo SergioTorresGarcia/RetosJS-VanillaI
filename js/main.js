@@ -47,6 +47,9 @@ debemos indicarlo.
 // let num = parseInt(prompt("Escribe un número"))
 // num % 2 == 0 ? console.log("Es divisible entre 2") : console.log("No es divisible entre 2")
 
+// otra opción one-liner que funciona pero no es legible
+// console.log(parseInt(prompt("Escribe un número"))%2 == 1 ? "No" : "", "es múltiplo de dos")
+
 /*
 6. Lee un número por teclado que pida el precio de un producto (puede tener decimales) y
 calcule el precio final con IVA. El IVA será una constante que sera del 21%
@@ -54,8 +57,7 @@ calcule el precio final con IVA. El IVA será una constante que sera del 21%
 
 // const iva = 1.21
 // let price = parseFloat(prompt("Escribe un precio neto"));
-// let result = price * iva
-// console.log("El precio con un IVA del 21% añadido es: ", result)
+// console.log("El precio con un IVA del 21% añadido es: ", price * iva)
 
 /*
 7. Muestra los números del 1 al 100 (ambos incluidos). Usa un bucle while.
@@ -161,29 +163,29 @@ Los signos aritméticos disponibles son:
 %: módulo, resto de la división entre operando1 y operando2.
 */
 
-let num1 = parseInt(prompt("Dime un número"))
-let num2 = parseInt(prompt("Dime otro número"))
-let op = prompt("Escoge uno de estos 6 signos aritméticos: +, -, *, /, ^, %")
+// let num1 = parseInt(prompt("Dime un número"))
+// let num2 = parseInt(prompt("Dime otro número"))
+// let op = prompt("Escoge uno de estos 6 signos aritméticos: +, -, *, /, ^, %")
 
-switch (op) {
-    case "+":
-        console.log(num1 + num2);
-        break;
-    case "-":
-        console.log(num1 - num2);
-        break;
-    case "*":
-        console.log(num1 * num2);
-        break;
-    case "/":
-        console.log(num1 / num2);
-        break;
-    case "^":
-        console.log(num1 ** num2);
-        break;
-    case "%":
-        console.log(num1 % num2);
-        break;
-    default:
-        console.log("Datos incorrectos")
-}
+// switch (op) {
+//     case "+":
+//         console.log(num1 + num2);
+//         break;
+//     case "-":
+//         console.log(num1 - num2);
+//         break;
+//     case "*":
+//         console.log(num1 * num2);
+//         break;
+//     case "/":
+//         console.log(num1 / num2);
+//         break;
+//     case "^":
+//         console.log(num1 ** num2);
+//         break;
+//     case "%":
+//         console.log(num1 % num2);
+//         break;
+//     default:
+//         console.log("Datos incorrectos")
+// }
